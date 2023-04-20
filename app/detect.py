@@ -42,4 +42,5 @@ def detect_and_save(image_url, output_location):
         font_size=30,
     )
     im = to_pil_image(box.detach())
-    im.save(os.path.join('/Users/elixir/object_detection/', "detected_" + image_file_name))
+    output_location = "/Users/elixir/object_detection/"
+    im.save(os.path.join(output_location, "detected_" + image_file_name))

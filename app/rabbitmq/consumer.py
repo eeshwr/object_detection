@@ -1,4 +1,3 @@
-
 def consume(
     channel,
     handler,
