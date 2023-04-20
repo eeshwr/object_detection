@@ -11,3 +11,5 @@ connection = pika.BlockingConnection(
 )
 rm_client = connection.channel()
 rm_client.queue_declare(queue=config.queue_name)
+
+# this file is not in use. I will delete it later
