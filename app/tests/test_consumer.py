@@ -1,7 +1,7 @@
 import pytest
 from app.rabbitmq import consumer
 from unittest.mock import Mock
-from tests.__mocks__ import pika
+from .__mocks__ import pika
 from app import config
 
 
