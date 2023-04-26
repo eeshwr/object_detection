@@ -28,3 +28,6 @@ def start_consuming():
         prefetch_count=config.prefetch_count,
     )
     channel.start_consuming()
+
+
+start_consuming()

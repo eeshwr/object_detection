@@ -2,9 +2,9 @@ from fastapi import FastAPI
 
 # from app.channel import rm_client
 import pickle
-from app import config
-from app.rabbitmq.channel import create_channel
-from app.rabbitmq import producer
+import config
+from rabbitmq.channel import create_channel
+from rabbitmq import producer
 
 app = FastAPI()
 
