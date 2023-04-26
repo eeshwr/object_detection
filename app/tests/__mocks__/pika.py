@@ -5,7 +5,7 @@ class Channel:
     def exchange_declare(self):
         pass
 
-    def queue_declare(self, queue, durable):
+    def queue_declare(self, queue):
         pass
 
     def queue_bind(self, queue, exchange):
@@ -25,11 +25,3 @@ class Channel:
 
     def basic_ack(self):
         pass
-
-
-class Connection:
-    def __init__(self):
-        pass
-
-    def channel(self):
-        return Channel()
