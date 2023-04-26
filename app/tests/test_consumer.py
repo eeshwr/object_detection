@@ -1,4 +1,3 @@
-import pytest
 from app.rabbitmq import consumer
 from unittest.mock import Mock
 from .__mocks__ import pika
@@ -9,7 +8,6 @@ def mocked_handler():
     pass
 
 
-@pytest.mark.unit
 def test_consumer_queue_declared(monkeypatch):
     channel = pika.Channel()
     channel.queue_declare = Mock()
@@ -26,7 +24,6 @@ def test_consumer_queue_declared(monkeypatch):
     )
 
 
-@pytest.mark.unit
 def test_consumer_basic_qos(monkeypatch):
     channel = pika.Channel()
     channel.basic_qos = Mock()
@@ -43,7 +40,6 @@ def test_consumer_basic_qos(monkeypatch):
     )
 
 
-@pytest.mark.unit
 def test_consumer_basic_consume(monkeypatch):
     channel = pika.Channel()
     channel.basic_consume = Mock()
