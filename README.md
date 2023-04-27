@@ -8,6 +8,6 @@ $ uvicorn main:app --reload
 
 ## Running the consumer
 ```
-cd app
+$ cd app
 $ python -m app.py
 ```
