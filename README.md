@@ -11,3 +11,9 @@ Stay in the root project directory i.e `object_detection` folder
 ```
 $ python -m app.app.py
 ```
+
+## Running the tests
+Just run following command
+```
+$ pytest
+```
